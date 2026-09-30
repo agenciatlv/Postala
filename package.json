@@ -1,0 +1,30 @@
+{
+  "name": "postala",
+  "version": "1.0.0",
+  "description": "Runway Dev test scripts",
+  "scripts": {
+    "check": "tsx --env-file-if-exists=.env src/check-account.ts",
+    "generate": "tsx --env-file-if-exists=.env src/generate-image.ts",
+    "typecheck": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agenciatlv/Postala.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agenciatlv/Postala/issues"
+  },
+  "homepage": "https://github.com/agenciatlv/Postala#readme",
+  "type": "module",
+  "dependencies": {
+    "@runwayml/sdk": "^4.20.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
