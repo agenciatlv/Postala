@@ -65,7 +65,8 @@ async function generate(id: string) {
         ratio: "720:1280",
         duration: 5,
       })
-      .waitForTaskOutput();
+      // Jobs run one at a time on this tier, so a queued clip can wait well past the 10 min default.
+      .waitForTaskOutput({ timeout: 60 * 60 * 1000 });
 
     // Output URLs expire, so keep a local copy.
     const file = `${OUTPUT_DIR}/cena0${id}_take${take}.mp4`;
