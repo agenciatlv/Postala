@@ -5,7 +5,9 @@
   "scripts": {
     "check": "tsx --env-file-if-exists=.env src/check-account.ts",
     "generate": "tsx --env-file-if-exists=.env src/generate-image.ts",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "invergroup:scenes": "tsx --env-file-if-exists=.env src/invergroup/generate-scenes.ts",
+    "invergroup:voice": "tsx --env-file-if-exists=.env src/invergroup/generate-voiceover.ts"
   },
   "repository": {
     "type": "git",
